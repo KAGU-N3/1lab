@@ -1,0 +1,2 @@
+# bdGrup
+ya ne VaibKoder
