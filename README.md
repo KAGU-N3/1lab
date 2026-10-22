@@ -45,18 +45,3 @@
 Данные (UTF-8, разделитель запятая):
 - [departments.csv](departments.csv)
 - [work_schedules.csv](work_schedules.csv)
-
-## Как запустить и проверить
-
-1. Открыть базу `lab1_variant22` в pgAdmin 4.
-2. Если таблицы уже созданы, **не выполнять** `create_tables.sql` повторно.
-3. В Query Tool выполнить `insert_data.sql` **один раз** на пустых таблицах. Не совмещать с импортом CSV.
-4. Проверить количество записей:
-
-```sql
-SELECT 'departments' AS table_name, COUNT(*) AS row_count FROM public.departments
-UNION ALL
-SELECT 'work_schedules', COUNT(*) FROM public.work_schedules;
-```
-
-Ожидается 12 и 36 записей. Скриншоты конструктора были сделаны в pgAdmin и предоставлены при выполнении задания.
